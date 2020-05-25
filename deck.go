@@ -20,7 +20,7 @@ func (d deck) printDeck() {
 }
 
 func (d deck) toString() string {
-	return strings.Join([]string(d), ",")
+	return strings.Join(d, ",")
 }
 
 func (d deck) writeToFile(fileName string) error {
@@ -67,7 +67,6 @@ func newDeck() deck {
 		"Eight",
 		"Nine",
 		"Ten",
-		"Eleven",
 		"Jack",
 		"Queen",
 		"King"}
